@@ -5,6 +5,9 @@
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 set fileformat=unix
 
+" set tags=tags;~/.vim/tags/fusion
+set ofu=syntaxcomplete#Complete
+
 set list " включить подсветку
 set listchars=tab:>-,trail:- " установить символы, которыми будет осуществляться подсветка
 colorscheme desert
@@ -151,7 +154,7 @@ imap <C-F> <C-X><C-O>
 
 " C-c and C-v - Copy/Paste в "глобальный клипборд"
 vmap <C-C> "+yi
-imap <C-V> <esc>"+gPi
+imap <C-v> <esc>"+gPi
 
 " Заставляем shift-insert работать как в Xterm
 map <S-Insert> <MiddleMouse>
@@ -159,6 +162,10 @@ map <S-Insert> <MiddleMouse>
 " C-y - удаление текущей строки
 nmap <C-y> dd
 imap <C-y> <esc>ddi
+" Включение определения типов файлов
+filetype on
+filetype plugin on
+filetype indent on
 
 " C-d - дублирование текущей строки
 imap <C-d> <esc>yypi
