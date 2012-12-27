@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='sftp://sandbox/htdocs/web/'
-let g:netrw_dirhist_2='sftp://sandbox/htdocs/web/base/'
-let g:netrw_dirhist_3='sftp://sandbox/htdocs/'
-let g:netrw_dirhist_4='sftp://sandbox/htdocs/fusion/'
-let g:netrw_dirhist_5='sftp://sandbox/htdocs/fusion/application/'
-let g:netrw_dirhist_6='sftp://sandbox/htdocs/fusion/application/commands/'
