@@ -167,4 +167,4 @@ imap {<CR> {<CR>}<Esc>O
 imap "<CR> "<CR>"<Esc>O
 " Аналогично и для '
 imap '<CR> '<CR>'<Esc>O
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <F6> :GundoToggle<CR>
