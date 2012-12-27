@@ -11,7 +11,8 @@ set noswapfile
 
 set list " включить подсветку
 set listchars=tab:>-,trail:- " установить символы, которыми будет осуществляться подсветка
-colorscheme desert
+colorscheme molokai
+let g:molokai_original=1
 set matchpairs+=<:> " показывать совпадающие скобки для HTML-тегов
 set showmatch " показывать первую парную скобку после ввода второй
 set autoread " перечитывать изменённые файлы автоматически
