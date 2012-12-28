@@ -1,6 +1,17 @@
 "-------------------------
 " Базовые настройки
 "-------------------------
+"отправить выделенный текст на pastebin
+nmap <F7> <Esc>:call SelectedToPastebin()<cr>
+vmap <F7> <esc>:call SelectedToPastebin()<cr>
+imap <F7> <esc><esc>:call SelectedToPastebin()<cr>
+
+function SelectedToPastebin()
+    normal! "y
+    call system("xclip -i ", getreg("*"))
+    execute "!xclip -o|pastebinit -a webeith -b http://paste.kde.org -f php | xclip -i"
+endfunction
+
 set fileformat=unix
 
 set ofu=syntaxcomplete#Complete
