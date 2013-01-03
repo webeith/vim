@@ -132,6 +132,11 @@ set sessionoptions=curdir,buffers,tabpages
 "-------------------------
 " Горячие клавишы
 "-------------------------
+"disable arrows
+map <left> <nop>
+map <right> <nop>
+map <up> <nop>
+map <down> <nop>
 
 " C-c and C-v - Copy/Paste в "глобальный клипборд"
 vmap <C-C> "+yi
