@@ -1,180 +1,194 @@
-"-------------------------
-" Базовые настройки
-"-------------------------
-"отправить выделенный текст на pastebin
-vmap <F7> <esc>:call SelectedToPastebin()<cr>
+"--------------------------+
+"        General           |
+"--------------------------+
+"pathogen
+let g:pathogen_disabled = []
+if !has('gui_running')
+   call add(g:pathogen_disabled, 'powerline')
+endif
 
-function SelectedToPastebin()
-    normal! "y
-    call system("xclip -i ", getreg("*"))
-    execute "!xclip -o|pastebinit -a webeith -b http://paste.kde.org -f php | xclip -i"
-endfunction
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
 
-set fileformat=unix
+" set <leader> key 
+let mapleader = ","
+let g:mapleader = ","
 
-set ofu=syntaxcomplete#Complete
+" autoreload vimrc
+autocmd! bufwritepost .vimrc source ~/.vimrc
 
+" gundo 
+nnoremap <F6> :GundoToggle<CR>
+
+" file options
+set fileencodings=utf8
+set encoding=utf8 nobomb " utf-8 with out BOM
+set termencoding=utf-8 " default text encoding
+set ff=unix " default file format
+
+" not compatible with the old-fashion vi mode
+set nocompatible
+
+
+"--------------------------+
+"        Appearance        |
+"--------------------------+
+" color shceme
+colorscheme molokai
+let g:molokai_original=1
+
+" status line
+set laststatus=2
+set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %{&fileformat}\ [LEN=%L]
+
+" show line numbers
+set nu
+
+" Show incomplete commands in statusbar
+set showcmd
+
+" always show cursor
+set ruler
+
+" command bar height
+set ch=2
+
+" highlight syntax
+syntax on
+
+" enable highlight
+set list
+
+" non-printable characters
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+
+" 256 color mode
+set t_Co=256
+
+" the first guy to show bracket after entering the second
+set showmatch
+
+" show brackets for html
+set matchpairs+=<:>
+
+"higlight search result
+set hlsearch 
+
+
+"--------------------------+
+"           Misc           |
+"--------------------------+
+" hide mouse pointer when printing
+set mousehide 
+
+" yank to the system register (*) by default
+set clipboard=unnamed
+
+" Enable filetype plugins
+filetype on
+filetype plugin on
+filetype indent on
+
+" no *~ backup and swap files
 set nobackup
 set nowritebackup
 set noswapfile
 
-set list " включить подсветку
-set listchars=tab:>-,trail:- " установить символы, которыми будет осуществляться подсветка
-colorscheme molokai
-let g:molokai_original=1
-set matchpairs+=<:> " показывать совпадающие скобки для HTML-тегов
-set showmatch " показывать первую парную скобку после ввода второй
-set autoread " перечитывать изменённые файлы автоматически
-set t_Co=256 " использовать больше цветов в терминале
-set confirm " использовать диалоги вместо сообщений об ошибках
+" auto update files
+set autoread 
 
-set clipboard=unnamed " во избежание лишней путаницы использовать системный буфер обмена вместо буфера Vim
-
-"C-q - комментировать/раскомментировать (при помощи NERD_Comment)
-map <C-q> \ci
-nmap <C-q> \ci
-imap <C-q> <ESC>\cii
-
-" PHP documenter script bound to Control-P
-autocmd FileType php inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
-autocmd FileType php nnoremap <C-K> :call PhpDocSingle()<CR>
-autocmd FileType php vnoremap <C-K> :call PhpDocRange()<CR>
-
-set nobackup
-
-" подключение pathogen
-call pathogen#infect()
-
-set laststatus=2
-set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %{GitBranch()}\ %{&fileformat}\ [LEN=%L]
-
-" возможные кодировки файлов и последовательность определения.
-set fileencodings=utf8
-set encoding=utf8
-
-set nocompatible
-
-" Показывать положение курсора всё время.
-set ruler  
-
-" Показывать незавершённые команды в статусбаре
-set showcmd  
-
-" Включаем нумерацию строк
-set nu
-
-" Фолдинг по отсупам
+" folding by indentation
 set nofoldenable
 
-" Поиск по набору текста (очень полезная функция)
-set incsearch
+" set 7 lines to the cursor - when moving vertically using j/k
+set so=7 
 
-set hlsearch
+" enable autoident
+set autoindent
 
-" Теперь нет необходимости передвигать курсор к краю экрана, чтобы подняться в режиме редактирования
-set scrolljump=7
+" tabs
+set expandtab " tab to spaces
+set shiftwidth=4 "size of tab
+set softtabstop=4
+set tabstop=4
 
-" Теперь нет необходимости передвигать курсор к краю экрана, чтобы опуститься в режиме редактирования
-set scrolloff=7
+" enable smart indent
+set smartindent
+
+" Fix <Enter> for comment
+set fo+=cr
 
 " Выключаем надоедливый "звонок"
 set novisualbell
 set t_vb=   
 
-" Поддержка мыши
-set mouse=a
-set mousemodel=popup
-
-" Кодировка текста по умолчанию
-set termencoding=utf-8
-
-" Не выгружать буфер, когда переключаемся на другой
-" Это позволяет редактировать несколько файлов в один и тот же момент без необходимости сохранения каждый раз
-" когда переключаешься между ними
-set hidden
-
-" Скрыть панель в gui версии ибо она не нужна
-set guioptions-=T
-
-" Сделать строку команд высотой в одну строку
-set ch=1
-
-" Скрывать указатель мыши, когда печатаем
-set mousehide
-
-" Включить автоотступы
-set autoindent
-
-" Влючить подстветку синтаксиса
-syntax on
+" session options
+set sessionoptions=curdir,buffers,tabpages
 
 " allow to use backspace instead of "x"
 set backspace=indent,eol,start whichwrap+=<,>,[,]
 
-" Преобразование Таба в пробелы
-set expandtab
+" a buffer becomes hidden when it is abandoned
+"set hidden
 
-" Размер табулации по умолчанию
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+" mouse
+set mouse=a
+set mousemodel=popup
 
-" Включаем "умные" отспупы ( например, автоотступ после {)
-set smartindent
-set cindent " ci - отступы в стиле С
 
-" Fix <Enter> for comment
-set fo+=cr
+"--------------------------+
+"         Mapping          |
+"--------------------------+
+"C-q - comment/uncomment (NERD_Comment)
+map <C-q> <leader>ci
+nmap <C-q> <leader>ci
+imap <C-q> <ESC><leader>cii
 
-" Опции сесссий
-set sessionoptions=curdir,buffers,tabpages
+" PHP documenter script bound to Control-K
+autocmd FileType php inoremap <C-K> <ESC>:call PhpDocSingle()<CR>i
+autocmd FileType php nnoremap <C-K> :call PhpDocSingle()<CR>
+autocmd FileType php vnoremap <C-K> :call PhpDocRange()<CR>
 
-"-------------------------
-" Горячие клавишы
-"-------------------------
+"disable arrows
+map <left> <nop>
+map <right> <nop>
+map <up> <nop>
+map <down> <nop>
 
-" C-c and C-v - Copy/Paste в "глобальный клипборд"
+" C-c and C-v - Copy/Paste to global clipboard
 vmap <C-C> "+yi
 imap <C-v> <esc>"+gPi
 
-" Заставляем shift-insert работать как в Xterm
-map <S-Insert> <MiddleMouse>
-
-" Включение определения типов файлов
-filetype on
-filetype plugin on
-filetype indent on
-
-" C-d - дублирование текущей строки
+" C-d - duplicate current line
 imap <C-d> <esc>yypi
 
-" Поиск и замена слова под курсором
+" fast search and replace word under  cursor
 nmap ; :%s/\<<c-r>=expand("<cword>")<cr>\>/
 
-" F2 - быстрое сохранение
-nmap <F2> :w<cr>
-vmap <F2> <esc>:w<cr>i
-imap <F2> <esc>:w<cr>i
-
-" F5 - просмотр списка буферов
+" F5 - show buffers
 nmap <F5> <Esc>:BufExplorer<cr>
 vmap <F5> <esc>:BufExplorer<cr>
 imap <F5> <esc><esc>:BufExplorer<cr>
 
-" < & > - делаем отступы для блоков
+" < & > - indent of blocks
 vmap < <gv
 vmap > >gv
 
-" Выключаем ненавистный режим замены
-imap >Ins> <Esc>i
-
-" Редко когда надо [ без пары =)
+" auto insert ]
 imap [ []<LEFT>
-" Аналогично и для {
-imap {<CR> {<CR>}<Esc>O
 
-" Аналогично и для "
-imap "<CR> "<CR>"<Esc>O
-" Аналогично и для '
-imap '<CR> '<CR>'<Esc>O
-nnoremap <F6> :GundoToggle<CR>
+" auto insert }
+imap {<CR> {<CR>}<Esc>
+
+" Useful mappings for managing tabs
+map <leader>tn :tabnew<cr>
+map <leader>to :tabonly<cr>
+map <leader>tc :tabclose<cr>
+map <leader>tm :tabmove 
+
+" Opens a new tab with the current buffer's path
+" Super useful when editing files in the same directory
+map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+
+" copy current doc - open new tab - paste doc
+map <leader>co ggVGy:tabnew<cr>:<cr>pgg
