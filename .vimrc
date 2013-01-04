@@ -236,3 +236,6 @@ vnoremap / /\v
 " folding
 map <leader>zo :EnablePHPFold<cr>
 map <leader>zc :DisablePHPFold<cr>
+
+" fast ack search
+nnoremap <leader>a :Ack
