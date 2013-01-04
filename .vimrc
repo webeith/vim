@@ -1,3 +1,9 @@
+command SftpRubin execute "e sftp://rubin//mnt/fusion-production/current/" 
+command SftpSandbox execute "e sftp://sandbox//var/www/vhosts/buharin.dev.easydate.biz/htdocs/" 
+command Wcrm execute "e sftp://wcrm//var/www/vhosts/wcrm/app/current/" 
+command Wcrmd execute "e sftp://wcrmd//var/www/vhosts/wcrm-dev/app/current/" 
+
+
 "--------------------------+
 "        General           |
 "--------------------------+
@@ -51,7 +57,7 @@ set showcmd
 set ruler
 
 " command bar height
-set ch=2
+set ch=1
 
 " highlight syntax
 syntax on
@@ -192,3 +198,7 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 " copy current doc - open new tab - paste doc
 map <leader>co ggVGy:tabnew<cr>:<cr>pgg
+
+" folding
+map <F7> <Esc>:EnablePHPFolds<Cr>
+map <F8> <Esc>:DisablePHPFolds<Cr>
