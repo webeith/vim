@@ -210,6 +210,12 @@ imap [ []<LEFT>
 " auto insert }
 imap {<CR> {<CR>}<Esc>
 
+" reselct paste text
+nnoremap <leader>v V`]
+
+" quick exit to normal mode
+inoremap jj <ESC>
+
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
@@ -222,3 +228,11 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 
 " copy current doc - open new tab - paste doc
 map <leader>co ggVGy:tabnew<cr>:<cr>pgg
+
+" useful search
+nnoremap / /\v
+vnoremap / /\v
+
+" folding
+map <leader>zo :EnablePHPFold<cr>
+map <leader>zc :DisablePHPFold<cr>
