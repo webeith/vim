@@ -1,9 +1,3 @@
-command SftpRubin execute "e sftp://rubin//mnt/fusion-production/current/" 
-command SftpSandbox execute "e sftp://sandbox//var/www/vhosts/buharin.dev.easydate.biz/htdocs/" 
-command Wcrm execute "e sftp://wcrm//var/www/vhosts/wcrm/app/current/" 
-command Wcrmd execute "e sftp://wcrmd//var/www/vhosts/wcrm-dev/app/current/" 
-
-
 "--------------------------+
 "        General           |
 "--------------------------+
@@ -118,6 +112,7 @@ set clipboard=unnamed
 filetype on
 filetype plugin on
 filetype indent on
+au FileType php set omnifunc=phpcomplete#CompletePHP
 
 " no *~ backup and swap files
 set nobackup
@@ -234,8 +229,18 @@ nnoremap / /\v
 vnoremap / /\v
 
 " folding
-map <leader>zo :EnablePHPFold<cr>
-map <leader>zc :DisablePHPFold<cr>
+map <leader>zc :EnablePHPFol<cr>
+map <leader>zo :DisablePHPFold<cr>
 
-" fast ack search
 nnoremap <leader>a :Ack
+
+" marks browser
+map <leader>m :MarksBrowser<cr>
+
+" Tagbar plugin
+nmap <F8> :TagbarToggle<cr>
+let g:tagbar_left = 1
+let g:tagbar_width = 30
+let g:tagbar_iconchars = ['▶', '◢']
+let g:tagbar_sort = 0
+
