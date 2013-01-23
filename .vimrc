@@ -244,3 +244,11 @@ let g:tagbar_width = 30
 let g:tagbar_iconchars = ['▶', '◢']
 let g:tagbar_sort = 0
 
+
+let g:ctrlp_extensions = ['tag','changes','mixed']
+set runtimepath^=~/.vim/bundle/kien-ctrlp.vim/plugin/ctrlp.vim
+let g:ctrlp_use_caching = 1
+let g:ctrlp_cache_dir = '~/.vim/.cache/ctrlp'
+
+
+
