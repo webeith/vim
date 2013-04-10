@@ -3,6 +3,11 @@ cmap <S-Insert>  <C-R>+
 map  <silent>  <S-Insert>  "+p
 imap <silent>  <S-Insert>  <Esc>"+pa
 
+set guifont=Liberation\ Mono\ 10
+cmap <S-Insert>  <C-R>+
+map  <silent>  <S-Insert>  "+p
+imap <silent>  <S-Insert>  <Esc>"+pa
+
 set guioptions+=e " включаем none-gui табы
 set guioptions-=r " отключаем правый scrollbar
 set guioptions-=R " отключаем правый scrollbar при вертикальном разделении окна

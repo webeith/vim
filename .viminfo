@@ -8,1384 +8,1087 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/showmatch
+~MSle0~/\<html\>
 
 # Last Substitute Search Pattern:
-~MSle0&*
+~MSle0&\<html\>
 
 # Last Substitute String:
 $
 
 # Command Line History (newest to oldest):
-:Project
-:wq
-:qa!
+:q!
 :q
-:tselect Yii
-:tselect log
-:tselect Yii::log
-:tag log
-:tags
-:tag MailCommand
-:help tags-and-searches
-:tselect
-:Q
-:uuuuuuuuuuuuuuuuuuu
+:e /home/eugene/mnt/sandbox/base/Crm
 :w
-:e sftp://sandbox/htdocs/
-:e sftp://sandbox/htdocs
-:e sftp://rubin//
-:e sftp://rubin/
-:view sftp://rubin/
+:so ~/.vimrc
+:set notimeout
+:%s/\<$this\>/l
+:%s/\<html\>/w
+:%s/\<id\>/w
+:%s/\<ucfirst\>/w
+:%s/\<getById\>/'w
+:tab
+:e /home/eugene/mnt/sandbox/
+:MarksBrowser
+:
+:source ~/sesvim
+:mksession! ~/sesvim
+:!mksession ~/sesvim
+:mksession ~/sesvim
+:wall
 
 # Search String History (newest to oldest):
-?/fileformat
-?/file
-?/C-d
-?/C-q
-? \<set\>
-? ^\s*$
-?/C-M
-?/C-L
-? \<php\>
-??php
-? php
-? \d\d\d\d\zs \+\d\+).*
-? d
-? f
-? <,
-? ^.*\%31c
-?/color
-?/showmatch
-?/backspace
-?/colorsc
+? \<html\>
+? \<id\>
+? \<ucfirst\>
+? \Vvdd\%#
+?/findRo
+?/fetchById
+?/fetchRo
+? \Vwh\%#
+? \Vm\%#
+? \Vt\.\%#
+? \Vf\%#
+? \V\.\%#
+? \V$g\%#
+? \V$s\%#
+? \Vs\%#
+? \Vgs\%#
+? \Vif\%#
+? \Vt\%#
+?/ssop
+? \<Publish\>
 
 # Expression History (newest to oldest):
 =y
 
 # Input Line History (newest to oldest):
+@a
+@code
+@%daddddd/
+@acacaac/
+@aaa/
+@[{y(es)},n(o),a(ll),q(uit)] a
+@aaa
+@sftp://sandbox//var/www/vhosts/buharin.dev.easydate.biz/htdocs/aaaaaa
+@%aaa
+@asdasd
+@[{y(es)},n(o),a(ll),q(uit)] y
+@Api.php
+@IHandler.php
+@t
 @[{y(es)},n(o),a(ll),q(uit)] n
 @[{y(es)},n(o),a(ll),q(uit)] 
 @ds
 @vim:
 @prr
 @prv
-@pre
-@pr
-@qf:prv
-@qf:<F3><F3><F3><F3>
-@printexit
-@p
-@*
-@/home/buharin/public_html/fusion.dev.com/
-@fusion
-@/home/buharin/public_html/fusion.dev.com
-@~/public_html/fusion.dev.com
-@fusion.dev.com
-@~/public_html/fusion.dev.com/
-@fusion2
 
 # Input Line History (newest to oldest):
 
 # Registers:
 "0	LINE	0
-	308
-<ctags-exuberant -R -f ~/.vim/tags/fusion -h ‚Äú.php‚Äù --exclude=‚Äù.git‚Äù --totals=yes --tag-relative=yes --PHP-kinds=+cf --regex-PHP=‚Äô/abstract class ([^ ]*)/\1/c/‚Äô --regex-PHP=‚Äô/interface ([^ ]*)/\1/c/‚Äô --regex-PHP=‚Äô/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/‚Äô
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/inc/models/Models/Service/Crm
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	Mail/
+	Rules/
+	Mail.php*
+	Mails.php*
+	MailsRevisions.php*
+	Rules.php*
 "1	LINE	0
-	        MongoCursor::$timeout = 5000;
-	                MongoCursor::$timeout = 5000;
-	                        MongoCursor::$timeout = 5000;
-	                                MongoCursor::$timeout = 5000;
-	                                        MongoCursor::$timeout = 5000;
-	
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/inc/models/Models/Service/Crm
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	Mail/
+	Rules/
+	Mail.php*
+	Mails.php*
+	MailsRevisions.php*
+	Rules.php*
 "2	LINE	0
 	" ============================================================================
-	" Netrw Directory Listing                                        (netrw v145)
-	"   sftp://rubin/
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/repository/admin/smarty/crm/rules/wcrm/repeat
 	"   Sorted by      name
-	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
 	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
 	" ============================================================================
 	../
-	./
-	.cache/
-	.mc/
-	.ssh/
-	.vim/
-	.bash_history
-	.bash_logout
-	.bashrc
-	.dbshell
-	.erlang.cookie
-	.gitconfig
-	.htoprc
-	.mysql_history
-	.profile
-	.viminfo
-	dead.letter
-	filename.txt
-	profiles_old.bson
+	edit.htm*
+	index.htm*
+	repeatrules.htm*
 "3	LINE	0
-	**error** (netrw) unable to remove directory<..> -- is it empty?
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/libs/App/Model/Mapper/Db
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	Table/
+	Abstract.php*
+	Exception.php*
 "4	LINE	0
-	total 30588
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/base/Crm
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	Mails/
+	Rules/
+	tools/
+	MailsController.php*
 "5	LINE	0
 	" ============================================================================
-	" Netrw Directory Listing                                        (netrw v145)
-	"   sftp://rubin/
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/inc/models/Models/Service/Crm
 	"   Sorted by      name
-	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
 	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
 	" ============================================================================
 	../
-	./
-	.cache/
-	.mc/
-	.ssh/
-	.vim/
-	.bash_history
-	.bash_logout
-	.bashrc
-	.dbshell
-	.erlang.cookie
-	.gitconfig
-	.htoprc
-	.mysql_history
-	.profile
-	.viminfo
-	dead.letter
-	filename.txt
-	profiles_old.bson
+	Mail/
+	Rules/
+	Mail.php*
+	Mails.php*
+	MailsRevisions.php*
+	Rules.php*
 "6	LINE	0
-	
-"7	CHAR	0
-	C-e - –∫–æ–º–º–µ–Ω—Ç–∏—Ä–æ–≤–∞—Ç—å/—Ä–∞—Å–∫–æ–º–º–µ–Ω—Ç–∏—Ä–æ–≤–∞—Ç—å (–ø—Ä–∏ –ø–æ–º–æ—â–∏ NERD_Comment
-"8	CHAR	0
-	C-q
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/repository/admin/smarty/crm/rules/wcrm/repeat
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	edit.htm*
+	index.htm*
+	repeatrules.htm*
+"7	LINE	0
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/libs/App/Model/Mapper/Db
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	Table/
+	Abstract.php*
+	Exception.php*
+"8	LINE	0
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/base/Crm
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	Mails/
+	Rules/
+	tools/
+	MailsController.php*
 "9	LINE	0
-	et statusline=%F%m%r%h%w\ [FF,FE,TE=%{&fileformat},%{&fileencoding},%{&encoding}\]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-"a	CHAR	0
-	viW"+YAprint_r(+PIÄ@7);die;
+	" ============================================================================
+	" Netrw Directory Listing                                        (netrw v142)
+	"   /home/eugene/mnt/sandbox/inc/models/Models/Service/Crm
+	"   Sorted by      name
+	"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+	"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+	" ============================================================================
+	../
+	Mail/
+	Rules/
+	Mail.php*
+	Mails.php*
+	MailsRevisions.php*
+	Rules.php*
+"a@	CHAR	0
+	fpviwccrunÄkhj
 "c	CHAR	0
-	CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCQ
+	w
 "p	CHAR	0
 	325
 <rintiiÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄklÄkuÄkuÄklÄklÄklÄklÄklÄklÄ˝cÄ˝b—à—ÜÄkbÄkb—à—Ü—à–¶iWÄkbiWÄkbvWÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkbÄkb
+"q	CHAR	0
+	I"A"uu
 ""-	CHAR	0
-	:
+	 
 
 # File marks:
-'0  132  18  ~/public_html/fusion.dev.com/yii/logging/CFileLogRoute.php
-'1  10  0  ~/.vimrc
-'2  8  1  ~/.vimrc
-'3  1  0  ~/.vimrc
-'4  20  4  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
-'5  103  0  ~/.vimprojects
-'6  93  0  ~/public_html/fusion.dev.com/yii/cli/commands/WebAppCommand.php
-'7  59  1  ~/public_html/fusion.dev.com/yii/console/CConsoleCommand.php
-'8  8  7  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
-'9  162  0  ~/.vimrc
+'0  67  16  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+'1  186  19  ~/mnt/sandbox/base/Crm/MailsController.php
+'2  181  9  ~/mnt/sandbox/base/Crm/MailsController.php
+'3  182  9  ~/mnt/sandbox/base/Crm/MailsController.php
+'4  67  6  ~/mnt/sandbox/base/Crm/MailsController.php
+'5  127  47  ~/.vimrc
+'6  153  0  ~/mnt/sandbox/base/Crm/MailsController.php
+'7  1  0  ~/sesvim
+'8  176  0  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+'9  105  10  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
 
 # Jumplist (newest first):
--'  132  18  ~/public_html/fusion.dev.com/yii/logging/CFileLogRoute.php
--'  20  8  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
--'  1  0  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
--'  10  0  ~/.vimrc
--'  8  0  ~/.vimrc
+-'  67  16  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  68  12  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  176  0  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  1  0  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  612  0  ~/mnt/sandbox
+-'  179  19  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  177  6  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  180  25  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  174  10  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  173  0  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  1  0  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  19  0  ~/mnt/sandbox/base/Crm
+-'  1  0  ~/mnt/sandbox/base/Crm
+-'  30  0  ~/mnt/sandbox/base/Crm
+-'  8  0  ~/mnt/sandbox/base/Crm/Mails
+-'  175  9  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  52  0  ~/mnt/sandbox/base/Crm
+-'  67  6  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  66  9  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  53  12  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  55  12  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  50  0  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  44  6  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  63  0  ~/mnt/sandbox/base/Crm
+-'  860  0  ~/mnt/sandbox/base
+-'  127  47  ~/.vimrc
+-'  7  17  ~/.vimrc
+-'  208  0  ~/.vimrc
+-'  207  0  ~/.vimrc
+-'  63  31  ~/.vimrc
+-'  265  0  ~/.vimrc
+-'  59  16  ~/.vimrc
+-'  43  9  ~/.vimrc
+-'  309  26  ~/.vimrc
+-'  308  26  ~/.vimrc
+-'  307  26  ~/.vimrc
+-'  54  9  ~/.vimrc
+-'  216  39  ~/.vimrc
+-'  57  17  ~/.vimrc
 -'  9  0  ~/.vimrc
+-'  304  0  ~/.vimrc
+-'  8  50  ~/.vimrc
 -'  1  0  ~/.vimrc
--'  103  0  ~/.vimprojects
--'  93  0  ~/public_html/fusion.dev.com/yii/cli/commands/WebAppCommand.php
--'  91  1  ~/public_html/fusion.dev.com/www/js/elFinder/php/connector.php
--'  307  0  ~/public_html/fusion.dev.com/application/controllers/RuleController.php
--'  2  1  ~/public_html/fusion.dev.com/application/commands/MailCommand.php
--'  16  0  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
--'  44  0  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
--'  9  20  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
--'  59  1  ~/public_html/fusion.dev.com/yii/console/CConsoleCommand.php
--'  6  40  ~/public_html/fusion.dev.com/application/components/FusionConsoleCommand.php
--'  2  43  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
--'  8  7  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
--'  155  0  ~/.vimrc
--'  162  0  ~/.vimrc
--'  156  0  ~/.vimrc
--'  285  0  ~/.vimrc
--'  154  0  ~/.vimrc
--'  21  0  ~/.vimrc
--'  5  0  sftp://sandbox/htdocs/web/base/actionrules.php
--'  1  0  sftp://sandbox/htdocs/web/base/actionrules.php
--'  34  0  sftp://sandbox/htdocs/web/base/
--'  1  0  sftp://sandbox/htdocs
--'  18  0  sftp://rubin//mnt/fusion-production/current/application/
--'  8  0  sftp://rubin//mnt/fusion-production/current/application/commands/
--'  11  0  sftp://rubin//mnt/fusion-production/current/application/commands/
--'  26  0  sftp://rubin/
--'  1  0  /usr/share/vim/vim73/doc/pi_netrw.txt.gz
--'  1  0  sftp://rubin/
--'  1  0  sftp://rubin/drwx------
--'  57  0  sftp://rubin/
--'  75  0  sftp://rubin/
--'  1  0  sftp://rubin/htdocs
--'  1  0  sftp://rubin/htdocs/web
--'  2  0  ~/Documents/vimconfig.git/NetrwMessage
--'  1  0  ftp://ftp.vim.org/pub/vim/patches/7.2/README
--'  20  1  ~/.vimrc
--'  19  0  ~/.vimrc
--'  11  0  ~/.vimrc
--'  5  0  ~/.vimrc
--'  6  0  ~/.vimrc
--'  2  0  ~/.vimrc
--'  15  0  ~/.vimrc
--'  65  0  ~/.vimrc
--'  66  0  ~/.vimrc
--'  45  0  ~/.vimrc
--'  17  0  ~/.vimrc
--'  47  0  ~/.vimrc
--'  118  0  ~/.vimrc
--'  119  103  ~/.vimrc
--'  18  4  ~/.vimrc
--'  53  53  ~/.vimrc
--'  268  27  ~/.vimrc
--'  56  4  ~/.vimrc
--'  40  11  ~/.vimrc
--'  37  11  ~/.vimrc
--'  36  6  ~/.vimrc
--'  27  8  ~/.vimrc
--'  26  8  ~/.vimrc
--'  25  8  ~/.vimrc
--'  278  29  ~/.vimrc
--'  271  45  ~/.vimrc
--'  270  44  ~/.vimrc
--'  269  8  ~/.vimrc
--'  130  0  ~/.vimrc
--'  188  16  ~/public_html/fusion.dev.com/application/commands/MailCommand.php
--'  19  0  ~/.marvim/NERD_tree_1
--'  89  2  ~/.marvim/NERD_tree_1
--'  1  0  ~/.marvim/NERD_tree_1
--'  277  0  ~/.vimrc
--'  22  0  ~/.vimrc
--'  23  0  ~/.vimrc
--'  57  0  ~/.vimrc
--'  246  11  ~/.vimrc
--'  151  2  ~/.vimrc
--'  212  0  ~/.vimrc
--'  152  6  ~/.vimrc
--'  213  0  ~/.vimrc
--'  55  74  ~/.vimrc
--'  227  0  ~/.vimrc
--'  232  5  ~/.vimrc
--'  6  0  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
--'  5  4  ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
--'  4  0  ~/.vimrc
--'  1  23  ~/.marvim/prv.mv7
--'  2  0  ~/.gvimrc
--'  4  0  ~/.gvimrc
--'  297  0  ~/public_html/fusion.dev.com/application/commands/MailCommand.php
--'  298  12  ~/public_html/fusion.dev.com/application/commands/MailCommand.php
--'  296  0  ~/public_html/fusion.dev.com/application/commands/MailCommand.php
--'  279  8  ~/public_html/fusion.dev.com/application/commands/MailCommand.php
+-'  153  0  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  74  0  ~/mnt/sandbox/base/Crm
+-'  1  0  ~/sesvim
+-'  105  8  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  15  4  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  8  0  ~/mnt/sandbox/search
+-'  3  0  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  5  8  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  23  0  ~/vimstest
+-'  1  0  ~/vimstest
+-'  83  12  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  2  4  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  72  0  /tmp/fz3temp-1/diff_match_patch.js
+-'  73  0  /tmp/fz3temp-1/diff_match_patch.js
+-'  50  0  ~/workspace/models/backup_2013.04.04/diff_match_patch.js
+-'  1  0  ~/mnt/sandbox/inc/models/Models/Mapper/Db/Table/Crm/Rules.php
+-'  1  0  ~/mnt/sandbox/inc/models/Models/Mapper/Db/Table/Crm
+-'  11  48  ~/mnt/sandbox/tests/run.php
+-'  1  0  ~/.vim/bundle/snipMate/vim-snippets-master/addon-info.json
+-'  1  0  ~/.vim/bundle/snipMate/vim-snippets-master/UltiSnips/all.snippets
+-'  1  0  ~/.vim/bundle/snipMate/snippets/zend/assert.snippet
+-'  1  0  ~/.vim/bundle/snipMate/snippets/Rakefile
+-'  32  0  ~/.vim/bundle/snipMate/snippets/support_functions.vim
+-'  1  0  ~/.vim/bundle/snipMate/snippets/support_functions.vim
+-'  1  0  ~/.vim/bundle/snipMate/snippets/php/foreachk.snippet
+-'  1  0  ~/.vim/bundle/snipMate/snippets/php/req1.snippet
+-'  1  0  ~/.vim/bundle/snipMate/snippets/php/wh.snippet
+-'  1  0  ~/.vim/bundle/snipMate/snippets/php/php.snippet
+-'  1  0  ~/.vim/bundle/snipMate/snippets/php/t.snippet
+-'  1  0  ~/mnt/sandbox/.git/index
+-'  51  8  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  1427  16  ~/.vim/bundle/netrw/doc/pi_netrw.txt
+-'  2449  26  ~/mnt/sandbox/inc/models/Landing.php
+-'  1828  23  ~/mnt/sandbox/inc/models/Landing.php
+-'  1  0  ~/mnt/sandbox/inc/models/Landing.php
+-'  154  0  ~/mnt/sandbox/inc/models
+-'  12  7  ~/mnt/sandbox/inc/models
+-'  9  0  ~/mnt/sandbox/inc/models
+-'  67  16  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  68  12  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  176  0  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  1  0  ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+-'  612  0  ~/mnt/sandbox
+-'  179  19  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  177  6  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  180  25  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  174  10  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  173  0  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  1  0  ~/mnt/sandbox/base/Crm/MailsController.php
+-'  8  0  ~/mnt/sandbox/base/Crm/Mails
 
 # History of marks within files (newest to oldest):
 
-> ~/public_html/fusion.dev.com/application/commands/RuleCommand.php
-	"	20	8
-	^	20	9
-	.	20	14
-	+	6	0
-	+	6	25
-	+	6	0
-	+	5	3
-	+	2	0
-	+	2	48
-	+	6	1
-	+	5	0
-	+	6	0
-	+	6	0
-	+	6	10
-	+	6	0
-	+	6	15
-	+	6	23
-	+	6	23
-	+	6	32
-	+	6	0
-	+	6	0
-	+	6	0
-	+	6	2
-	+	6	0
-	+	6	5
-	+	6	5
-	+	6	36
-	+	6	0
-	+	6	14
-	+	7	0
-	+	6	0
-	+	18	13
-	+	13	8
-	+	16	21
-	+	8	29
-	+	8	0
-	+	2	0
-	+	17	7
-	+	19	19
-	+	21	5
-	+	20	5
-	+	21	12
-	+	20	14
-
-> ~/.vimprojects
-	"	103	0
-	^	2	93
-	.	2	92
-	+	5478	0
-	+	5484	0
-	+	5474	0
-	+	5475	0
-	+	5474	0
-	+	1	1
-	+	5472	0
-	+	5472	0
-	+	5472	1
-	+	5472	1
-	+	5472	0
-	+	5472	0
-	+	5470	0
-	+	2	23
-	+	11	0
-	+	11	0
-	+	2	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	11	0
-	+	4	0
+> ~/mnt/sandbox/repository/admin/smarty/crm/mails/edit.htm
+	"	67	16
+	^	67	17
+	.	69	0
+	+	3	0
+	+	3	0
+	+	3	0
+	+	3	0
 	+	2	0
 	+	3	0
-	+	2	92
-	k	2	0
+	+	3	0
+	+	5	0
+	+	3	0
+	+	21	0
+	+	16	8
+	+	20	8
+	+	15	0
+	+	16	0
+	+	21	0
+	+	20	0
+	+	15	0
+	+	105	0
+	+	57	52
+	+	56	25
+	+	62	50
+	+	68	12
+	+	69	0
+	+	62	37
+	+	68	33
+	+	76	0
+	+	51	0
+	+	50	0
+	+	56	0
+	+	80	8
+	+	76	0
+	+	80	0
+	+	56	0
+	+	80	0
+	+	71	0
+	+	75	0
+	+	80	0
+	+	58	90
+	+	53	117
+	+	58	67
+	+	68	0
+	+	3	20
+	+	5	15
+	+	68	61
+	+	66	0
+	+	68	89
+	+	68	104
+	+	66	0
+	+	69	0
+	+	65	12
+	+	66	12
+	+	63	47
+	+	66	12
+	+	66	15
+	+	69	0
+	+	66	54
+	+	67	17
+	+	68	40
+	+	68	64
+	+	68	47
+	+	68	0
+	+	68	67
+	+	68	17
+	+	68	0
+	+	63	25
+	+	68	90
+	+	68	58
+	+	68	61
+	+	65	42
+	+	66	37
+	+	64	0
+	+	63	25
+	+	66	47
+	+	63	42
+	+	68	81
+	+	68	0
+	+	68	107
+	+	68	0
+	+	68	162
+	+	69	0
 
-> ~/public_html/fusion.dev.com/tags
+> ~/mnt/sandbox/base/Crm/MailsController.php
+	"	51	0
+	^	166	0
+	.	166	0
+	+	186	0
+	+	187	0
+	+	186	0
+	+	184	0
+	+	185	0
+	+	184	0
+	+	185	0
+	+	111	0
+	+	111	0
+	+	111	0
+	+	111	64
+	+	111	0
+	+	111	0
+	+	112	0
+	+	167	0
+	+	167	60
+	+	167	0
+	+	167	74
+	+	167	68
+	+	167	68
+	+	163	117
+	+	165	0
+	+	165	0
+	+	164	0
+	+	167	0
+	+	167	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	180	0
+	+	51	7
+	+	51	6
+	+	51	5
+	+	51	4
+	+	51	3
+	+	51	2
+	+	51	1
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	51	0
+	+	167	69
+	+	167	0
+	+	169	0
+	+	167	24
+	+	167	69
+	+	168	0
+	+	165	17
+	+	165	18
+	+	166	0
+	a	126	0
+
+> ~/mnt/sandbox/inc/models/Models/Service/Crm/Rules.php
 	"	1	0
+	^	8	0
+	.	2	0
+	+	217	0
+	+	217	0
+	+	217	0
+	+	217	30
+	+	217	0
+	+	217	40
+	+	217	23
+	+	217	0
+	+	217	0
+	+	217	14
+	+	217	17
+	+	217	19
+	+	217	20
+	+	217	0
+	+	217	0
+	+	217	0
+	+	217	0
+	+	217	51
+	+	217	0
+	+	217	19
+	+	217	0
+	+	217	0
+	+	217	0
+	+	217	0
+	+	218	0
+	+	196	0
+	+	61	25
+	+	62	0
+	+	68	76
+	+	70	0
+	+	68	31
+	+	28	33
+	+	29	28
+	+	40	30
+	+	42	0
+	+	177	0
+	+	182	0
+	+	2	0
+	+	2	0
 
-> ~/public_html/fusion.dev.com/yii/logging/CFileLogRoute.php
-	"	132	18
+> ~/mnt/sandbox/__InputList__
+	"	1	1
+	.	1	1
+	+	1	1
+
+> ~/mnt/sandbox/inc/models/Models/Mapper/Crm/Rules.php
+	"	56	0
+	^	58	12
+	.	60	0
+	+	104	0
+	+	104	0
+	+	104	32
+	+	104	33
+	+	104	8
+	+	104	0
+	+	104	23
+	+	104	38
+	+	104	33
+	+	104	0
+	+	104	0
+	+	104	0
+	+	104	0
+	+	105	0
+	+	21	76
+	+	22	31
+	+	23	0
+	+	25	27
+	+	26	59
+	+	27	0
+	+	30	78
+	+	31	30
+	+	32	0
+	+	59	0
+	+	57	18
+	+	58	0
+	+	60	0
+
+> ~/mnt/sandbox/libs/App/Model/Mapper/Db/Abstract.php
+	"	692	0
+	.	606	0
+	+	607	0
+	+	607	0
+	+	606	0
+	+	623	0
+	+	623	0
+	+	350	0
+	+	351	0
+	+	350	9
+	+	350	8
+	+	351	0
+	+	351	0
+	+	351	17
+	+	351	0
+	+	606	0
+
+> ~/mnt/sandbox/repository/admin/smarty/crm/rules/wcrm/action/index.htm
+	"	109	22
+	^	6	23
+	.	6	17
+	+	3	0
+	+	88	40
+	+	35	0
+	+	21	0
+	+	11	4
+	+	22	4
+	+	12	8
+	+	12	15
+	+	12	15
+	+	22	0
+	+	12	4
+	+	12	0
+	+	12	0
+	+	20	49
+	+	11	5
+	+	12	0
+	+	12	0
+	+	11	0
+	+	51	41
+	+	20	47
+	+	3	17
+	+	4	17
+	+	5	17
+	+	6	17
+
+> ~/mnt/sandbox/repository/admin/smarty/crm/mails/index.htm
+	"	44	14
+	^	3	22
+	.	3	0
+	+	62	33
+	+	19	25
+	+	18	0
+	+	19	42
+	+	24	8
+	+	20	41
+	+	21	63
+	+	23	0
+	+	22	15
+	+	23	58
+	+	20	0
+	+	20	0
+	+	23	24
+	+	21	24
+	+	62	16
+	+	64	35
+	+	21	44
+	+	23	44
+	+	21	44
+	+	64	0
+	+	3	25
+	+	4	21
+	+	5	21
+	+	6	21
+	+	3	21
+	+	4	21
+	+	3	0
+
+> ~/mnt/sandbox/repository/admin/smarty/crm/rules/wcrm/repeat/index.htm
+	"	92	26
+	^	6	27
+	.	6	21
+	+	3	21
+	+	4	21
+	+	5	21
+	+	6	21
+
+> ~/mnt/sandbox/lp/landing.section.php
+	"	59	0
+
+> ~/mnt/sandbox/lp/crm.preview.php
+	"	41	0
+
+> ~/mnt/sandbox/lp/setcontent.php
+	"	110	0
+
+> ~/mnt/sandbox/lp/landing.create.php
+	"	20	9
+	^	21	14
+
+> ~/mnt/sandbox/repository/admin/smarty/lp/lp.create.htm
+	"	219	31
+
+> ~/mnt/sandbox/inc/models/Landing.php
+	"	2449	26
+	^	1828	24
 
 > ~/.vimrc
-	"	10	0
-	^	10	1
-	.	10	0
-	+	1	0
-	+	1	10
-	+	5	0
-	+	1	10
-	+	1	0
-	+	5	0
-	+	37	0
-	+	33	0
-	+	36	0
-	+	32	20
-	+	31	105
-	+	31	4
-	+	32	7
-	+	32	8
-	+	32	8
-	+	32	0
-	+	32	0
-	+	32	10
-	+	32	11
-	+	32	16
-	+	246	1
-	+	243	0
-	+	241	0
-	+	242	5
-	+	244	16
-	+	243	33
-	+	242	11
-	+	241	33
-	+	32	6
-	+	32	5
-	+	32	6
-	+	66	0
-	+	65	0
-	+	260	0
-	+	166	0
-	+	32	0
-	+	250	0
-	+	32	0
-	+	287	1
-	+	287	0
-	+	287	0
-	+	287	0
-	+	287	0
-	+	287	0
-	+	287	0
-	+	3	0
-	+	287	0
-	+	3	0
-	+	1	0
-	+	7	0
-	+	20	0
-	+	25	0
-	+	25	0
-	+	25	0
-	+	136	0
-	+	135	97
-	+	135	0
-	+	132	34
-	+	132	34
-	+	132	34
-	+	133	0
-	+	6	19
-	+	20	0
-	+	21	0
-	+	20	4
-	+	121	0
-	+	13	0
-	+	7	0
-	+	55	213
-	+	55	53
-	+	55	53
-	+	55	53
-	+	55	30
-	+	56	0
-	+	20	0
-	+	11	0
-	+	17	0
-	+	12	0
-	+	6	0
-	+	6	0
-	+	5	0
-	+	5	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	6	0
-	+	13	0
-	+	23	0
-	+	21	104
-	+	22	0
-	+	23	0
-	+	156	8
-	+	157	8
-	+	158	0
-	+	156	8
-	+	158	0
+	"	137	0
+	^	137	0
+	.	136	13
+	+	346	0
+	+	347	11
+	+	352	10
+	+	344	33
+	+	354	28
+	+	353	28
+	+	352	29
+	+	349	29
+	+	348	29
+	+	347	30
+	+	42	0
+	+	68	0
 	+	8	1
+	+	7	0
+	+	13	0
+	+	8	57
+	+	8	0
 	+	10	0
-
-> ~/tags
-	"	1	0
-
-> ~/public_html/fusion.dev.com/yii/cli/commands/WebAppCommand.php
-	"	93	0
-
-> ~/public_html/fusion.dev.com/www/js/editarea/edit_area/edit_area_compressor.php
-	"	400	0
-
-> ~/public_html/fusion.dev.com/yii/YiiBase.php
-	"	347	0
-
-> ~/.vim/tags/fusion
-	"	1	0
-
-> /usr/share/vim/vim73/doc/tagsrch.txt.gz
-	"	133	56
-	.	838	0
-	+	838	0
-
-> ~/public_html/fusion.dev.com/application/commands/MailCommand.php
-	"	2	1
-	^	298	13
-	.	188	0
-	+	4	3
-	+	4	6
-	+	4	6
-	+	4	4
-	+	4	4
-	+	12	1
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	49
-	+	12	86
-	+	4	44
-	+	12	0
-	+	11	4
-	+	4	3
-	+	4	2
-	+	12	6
-	+	12	3
-	+	12	3
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	2
-	+	12	0
-	+	12	52
-	+	12	0
-	+	12	49
-	+	12	0
-	+	12	0
-	+	12	2
-	+	12	1
-	+	12	88
-	+	12	65
-	+	12	96
-	+	12	91
-	+	12	86
-	+	12	76
-	+	12	14
-	+	12	74
-	+	12	11
-	+	12	73
-	+	12	13
-	+	12	1
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	1
-	+	12	0
-	+	12	19
-	+	12	0
-	+	12	18
-	+	12	28
-	+	12	0
-	+	12	0
-	+	12	9
-	+	10	0
-	+	284	0
-	+	12	0
-	+	20	0
-	+	20	0
-	+	21	0
-	+	276	3
-	+	276	0
-	+	294	53
-	+	294	24
-	+	294	32
-	+	294	16
-	+	294	48
-	+	294	48
-	+	294	30
-	+	294	46
-	+	294	53
-	+	294	48
-	+	294	48
-	+	294	28
-	+	294	40
-	+	294	32
-	+	294	32
-	+	294	44
-	+	294	124
-	+	294	53
-	+	294	69
-	+	294	56
-	+	296	37
-	+	296	0
-	+	297	26
-	+	2	0
-	+	297	8
-	+	297	16
-	+	297	10
-	+	297	0
-	+	298	0
+	+	9	0
+	+	315	0
+	+	316	0
+	+	240	0
+	+	228	0
+	+	223	0
+	+	223	0
+	+	225	39
+	+	57	17
+	+	63	9
+	+	316	26
+	+	317	26
+	+	54	9
+	+	318	26
+	+	43	9
+	+	59	17
+	+	57	16
+	+	7	0
+	+	7	0
 	+	189	0
-	+	188	0
-
-> ~/public_html/fusion.dev.com/application/controllers/RuleController.php
-	"	307	0
-
-> ~/public_html/fusion.dev.com/www/js/elFinder/php/connector.php
-	"	91	1
-
-> ~/public_html/fusion.dev.com/application/components/FusionConsoleCommand.php
-	"	6	40
-	^	42	4
-	.	42	3
-	+	42	3
-
-> ~/public_html/fusion.dev.com/yii/console/CConsoleCommand.php
-	"	59	1
-	.	59	0
-	+	59	0
-
-> sftp://sandbox/htdocs/
-	"	10	0
-	.	19	0
-	+	19	0
-	+	19	0
-
-> sftp://sandbox/htdocs/.htaccess
-	"	1	0
-
-> sftp://sandbox/htdocs/fusion/
-	"	12	0
-	.	14	0
-	+	14	0
-
-> sftp://sandbox/htdocs/fusion/application/
-	"	10	0
-	.	23	0
-	+	23	0
-
-> sftp://sandbox/htdocs/fusion/application/commands/
-	"	10	0
-	.	16	0
-	+	16	0
-
-> sftp://sandbox/htdocs/fusion/application/commands/DashboardCommand.php
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-
-> sftp://rubin/
-	"	26	0
-	.	26	0
-	+	1	0
-	+	1	0
-	+	50	0
-	+	50	0
-	+	1	0
-	+	26	0
-
-> /usr/share/vim/vim73/doc/pi_netrw.txt.gz
-	"	1025	46
-	.	3562	0
-	+	3562	0
-
-> sftp://rubin//
-	"	20	0
-	.	36	0
-	+	36	0
-
-> sftp://rubin//mnt/
-	"	12	0
-	.	18	0
-	+	18	0
-
-> sftp://rubin//mnt/fusion-production/
-	"	10	0
-	.	12	0
-	+	12	0
-
-> sftp://rubin//mnt/fusion-production/current/
-	"	12	0
-	.	16	0
-	+	16	0
-
-> sftp://rubin//mnt/fusion-production/current/application/
-	"	18	0
-	.	23	0
-	+	45	0
-	+	23	0
-
-> sftp://rubin//mnt/fusion-production/current/application/commands/
-	"	8	0
-	.	18	0
-	+	18	0
-
-> sftp://rubin//mnt/fusion-production/current/application/commands/MailCommand.php
-	"	1	0
-
-> sftp://sandbox/htdocs
-	"	1	0
-
-> sftp://sandbox/htdocs/web/
-	"	30	0
-	.	578	0
-	+	578	0
-
-> sftp://sandbox/htdocs/web/base/
-	"	34	0
-	.	196	0
-	+	196	0
-
-> /tmp/vylOq2Z/24.php
-	"	1	0
-
-> /tmp/vylOq2Z/25.php
-	"	1	0
-
-> /tmp/vylOq2Z/26.php
-	"	1	0
-
-> sftp://sandbox/htdocs/web/base/actionrules.php
-	"	5	0
-
-> sftp://rubin/htdocs
-	"	1	0
-
-> sftp://rubin/drwx------
-	"	1	0
-
-> sftp://rubin/htdocs/web
-	"	1	0
-
-> ftp://ftp.vim.org/pub/vim/patches/7.2/README
-	"	1	0
-
-> sftp://rubin/.cache/
-	"	8	0
-	.	10	0
-	+	10	0
-
-> sftp://rubin/.mc/
-	"	9	0
-	.	15	0
-	+	15	0
-
-> /tmp/tutorJLaB2O
-	"	335	5
-
-> ~/.marvim/NERD_tree_1
-	"	1	0
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/.marvim/[BufExplorer]
-	"	1	0
-
-> ~/.marvim/prv.mv7
-	"	1	23
-	^	1	24
-	.	1	23
-	+	1	23
-
-> ~/.gvimrc
-	"	2	0
-	^	4	0
-	.	4	0
-	+	1	258
-	+	1	417
-	+	1	24
-	+	1	0
-	+	1	26
-	+	1	0
-	+	1	18
-	+	1	0
-	+	1	32
-	+	2	34
-	+	2	0
-	+	2	23
-	+	4	0
-
-> ~/option-window
-	"	1	0
-	^	1	0
-	.	902	0
-	+	57	0
-	+	91	0
-	+	94	0
-	+	128	0
-	+	135	0
-	+	166	0
-	+	171	0
-	+	174	0
-	+	177	0
-	+	180	0
-	+	183	0
-	+	191	0
-	+	194	0
-	+	197	0
-	+	204	0
-	+	207	0
-	+	210	0
-	+	213	0
+	+	7	0
+	+	7	0
+	+	7	0
+	+	7	8
+	+	7	10
+	+	7	10
+	+	217	0
 	+	216	0
-	+	219	0
-	+	222	0
-	+	244	0
-	+	247	0
-	+	258	0
-	+	270	0
-	+	275	0
-	+	445	0
-	+	448	0
-	+	451	0
-	+	454	0
-	+	457	0
-	+	462	0
-	+	465	0
-	+	468	0
-	+	471	0
-	+	474	0
-	+	481	0
-	+	484	0
-	+	493	0
-	+	506	0
-	+	512	0
-	+	518	0
-	+	521	0
-	+	526	0
-	+	531	0
-	+	534	0
-	+	537	0
-	+	540	0
-	+	543	0
-	+	546	0
-	+	549	0
-	+	552	0
-	+	555	0
-	+	558	0
-	+	561	0
-	+	564	0
-	+	572	0
-	+	575	0
-	+	580	0
-	+	583	0
-	+	590	0
-	+	592	0
-	+	595	0
-	+	598	0
-	+	601	0
-	+	604	0
-	+	607	0
-	+	613	0
-	+	640	0
-	+	645	0
-	+	648	0
-	+	651	0
-	+	654	0
-	+	659	0
-	+	691	0
-	+	694	0
-	+	702	0
-	+	728	0
-	+	794	0
-	+	799	0
-	+	802	0
-	+	805	0
-	+	822	0
-	+	828	0
-	+	835	0
-	+	838	0
-	+	849	0
-	+	893	0
-	+	896	0
-	+	899	0
-	+	902	0
+	+	217	37
+	+	63	49
+	+	189	0
+	+	7	0
+	+	8	50
+	+	9	0
+	+	66	10
+	+	43	27
+	+	52	10
+	+	54	27
+	+	61	10
+	+	63	26
+	+	43	0
+	+	138	0
+	+	116	0
+	+	143	0
+	+	142	0
+	+	139	21
+	+	138	0
+	+	141	0
+	+	139	13
+	+	116	0
+	+	128	0
+	+	117	0
+	+	133	13
+	+	132	4
+	+	130	24
+	+	129	20
+	+	130	0
+	+	129	0
+	+	129	0
+	+	136	12
+	+	134	0
+	+	135	22
+	+	136	13
 
-> ~/public_html/fusion.dev.com/bash - 1
-	"	12	0
-	^	12	4
-	.	59	0
+> ~/.vim/bundle/__InputList__
+	"	1	1
+	.	1	1
+	+	1	1
+
+> ~/mnt/sandbox/[Marks]
+	"	17	0
+	.	1	0
 	+	1	0
-	+	60	0
-	+	61	0
-	+	62	0
-	+	63	0
-	+	64	0
-	+	65	0
-	+	66	0
-	+	89	0
 	+	1	0
-	+	2	0
-	+	3	0
-	+	4	0
-	+	5	0
-	+	59	0
-	+	2	0
-	+	50	0
-	+	59	0
 
-> ~/bash - 1
-	"	591	39
-	^	591	40
-	.	591	0
-	+	388	0
-	+	389	0
-	+	390	0
-	+	391	0
-	+	392	0
-	+	393	0
-	+	394	0
-	+	395	0
-	+	396	0
-	+	397	0
-	+	398	0
-	+	399	0
-	+	400	0
-	+	401	0
-	+	402	0
-	+	403	0
-	+	404	0
-	+	405	0
-	+	406	0
-	+	407	0
-	+	408	0
-	+	409	0
-	+	410	0
-	+	411	0
-	+	412	0
-	+	413	0
-	+	414	0
-	+	415	0
-	+	416	0
-	+	417	0
-	+	418	0
-	+	419	0
-	+	420	0
-	+	421	0
-	+	422	0
-	+	423	0
-	+	424	0
-	+	425	0
-	+	426	0
-	+	427	0
-	+	428	0
-	+	429	0
-	+	430	0
-	+	431	0
-	+	432	0
-	+	433	0
-	+	434	0
-	+	435	0
-	+	436	0
-	+	437	0
-	+	438	0
-	+	439	0
-	+	440	0
-	+	441	0
-	+	442	0
-	+	443	0
-	+	444	0
-	+	445	0
-	+	446	0
-	+	447	0
-	+	448	0
-	+	449	0
-	+	450	0
-	+	451	0
-	+	452	0
-	+	453	0
-	+	454	0
-	+	455	0
-	+	456	0
-	+	457	0
-	+	458	0
-	+	459	0
-	+	460	0
-	+	461	0
-	+	462	0
-	+	463	0
-	+	464	0
-	+	465	0
-	+	466	0
-	+	467	0
-	+	468	0
-	+	469	0
-	+	492	0
-	+	504	0
-	+	505	0
-	+	506	0
-	+	557	0
-	+	558	0
-	+	559	0
-	+	560	0
-	+	561	0
-	+	562	0
-	+	563	0
-	+	564	0
-	+	565	0
-	+	566	0
-	+	567	0
-	+	568	0
-	+	569	0
-	+	591	0
+> ~/.vim/bundle/snipMate/vim-snippets-master/addon-info.json
+	"	1	0
 
-> ~/public_html/fusion.dev.com/NERD_tree_1
+> ~/.vim/bundle/snipMate/vim-snippets-master/UltiSnips/all.snippets
+	"	1	0
+
+> ~/.vim/bundle/snipMate/snippets/zend/assert.snippet
+	"	1	0
+
+> ~/.vim/bundle/snipMate/snippets/Rakefile
+	"	1	0
+
+> ~/.vim/bundle/snipMate/snippets/support_functions.vim
+	"	32	0
+
+> ~/.vim/bundle/snipMate/snippets/php/foreachk.snippet
+	"	1	0
+
+> ~/.vim/bundle/snipMate/snippets/php/req1.snippet
+	"	1	0
+
+> ~/.vim/bundle/snipMate/snippets/php/wh.snippet
+	"	1	0
+
+> ~/.vim/bundle/snipMate/snippets/php/php.snippet
+	"	1	0
+
+> ~/.vim/bundle/snipMate/snippets/php/t.snippet
+	"	1	0
+
+> ~/mnt/sandbox/.git/index
+	"	1	0
+
+> ~/[Marks]
 	"	16	0
 	.	1	0
 	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
 
-> ~/public_html/fusion.dev.com/NERD_tree_2
-	"	7	0
-	.	1	0
-	+	1	0
-	+	1	0
+> ~/.vim/bundle/dbext_1800/doc/dbext.txt
+	"	3612	0
 
-> ~/.vim/conqueterm_2.2.bin
+> ~/.vim/bundle/vim-fugitive/doc/fugitive.txt
+	"	32	65
+
+> ~/mnt/sandbox/_aff/aff.module.php
 	"	1	0
 
-> ~/.vim/.VimballRecord
+> ~/.vim/bundle/netrw/doc/pi_netrw.txt
+	"	1427	16
+
+> ~/mnt/sandbox/_aff/aff.payment.php
 	"	1	0
+
+> ~/mnt/sandbox/_aff/aff.show.php
+	"	1	0
+
+> ~/sesvim
+	"	1	0
+
+> ~/.vim/bundle/js/indent/javascript.vim
+	"	257	11
 	.	1	0
 	+	1	0
 
-> ~/NERD_tree_1
-	"	4	0
+> ~/vimstest
+	"	23	0
+
+> /tmp/fz3temp-1/diff_match_patch.js
+	"	72	0
+	.	73	0
+	+	73	0
+	+	1	0
+	+	73	0
+
+> ~/workspace/models/backup_2013.04.04/diff_match_patch.js
+	"	50	0
+	^	50	0
 	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
+	+	50	0
 	+	1	0
 
-> ~/.vim/bundle/syntastic/plugin/syntastic.vim
+> ~/mnt/sandbox/inc/models/Models/Mapper/Db/Table/Crm/Rules.php
 	"	1	0
 
-> ~/.vim/plugin/pathogen.vim
-	"	252	0
-	^	252	0
-	.	252	0
-	+	252	0
-
-> ~/public_html/fusion.dev.com/application/commands/DashboardCommand.php
-	"	13	3
-	^	12	4
-	.	12	4
-	+	12	4
-
-> ~/public_html/fusion.dev.com/application/yiic.php
-	"	8	0
-	^	6	0
-	.	5	0
-	+	5	0
-
-> ~/public_html/fusion.dev.com/SitesAbstract.php
-	"	1	0
-	^	416	1
-	.	416	1
-	+	11	4
-	+	11	0
-	+	11	0
-	+	34	4
-	+	35	14
-	+	47	8
-	+	49	0
-	+	48	0
-	+	47	17
-	+	134	0
-	+	214	0
-	+	293	0
-	+	328	0
-	+	348	0
-	+	392	0
-	+	418	0
-	+	416	1
-
-> ~/.vim/plugin/phpcs.vim
-	"	1	4
-	^	15	0
-	.	1	0
+> ~/mnt/sandbox/inc/models/Models/Mapper/Db/Table/Crm/Mails.php
+	"	25	0
+	^	25	1
+	.	26	0
+	+	25	1
+	+	9	36
+	+	16	0
+	+	13	59
+	+	14	9
 	+	15	0
-	+	1	0
-
-> ~/public_html/fusion.dev.com/Capfile
-	"	1	0
-
-> ~/public_html/fusion.dev.com/fusion.bluefish.bfproject
-	"	1	0
-
-> ~/public_html/fusion.dev.com/fusion.session
-	"	7	6
-	^	6	7
-	.	6	7
-	+	6	7
-	a	6	5
-
-> ~/public_html/fusion.dev.com/fusion.webprj
-	"	1	0
-
-> ~/public_html/fusion.dev.com/wcrm_widgets.htm
-	"	1	0
-
-> ~/public_html/fusion.dev.com/wcrmsites.php
-	"	1	0
-
-> ~/[BufExplorer]
-	"	1	0
-
-> ~/fusion2
-	"	1	0
-
-> /usr/share/vim/vim73/doc/ft_ada.txt.gz
-	"	372	0
-	.	516	0
-	+	516	0
-
-> ~/create.sh
-	"	1	0
-
-> ~/main.cpp
-	"	18	7
-	^	18	8
-	.	40	37
-	+	40	37
-
-> ~/defs.h
-	"	21	16
-	.	21	0
+	+	14	58
+	+	15	9
+	+	17	0
+	+	16	9
+	+	18	8
+	+	19	9
+	+	20	54
 	+	21	0
+	+	22	9
+	+	24	0
+	+	25	0
+	+	23	8
+	+	16	36
+	+	15	36
+	+	14	36
+	+	13	36
+	+	18	35
+	+	19	35
+	+	20	36
+	+	21	35
+	+	22	36
+	+	26	0
+	+	26	0
 
-> /usr/share/vim/vim73/doc/gui.txt.gz
-	"	427	35
-	.	1002	0
-	+	1002	0
+> ~/mnt/sandbox/inc/models/Models/Mapper/Db/Table/Crm/Mail.php
+	"	1	0
 
-> ~/public_html/fusion.dev.com/application/controllers/ApiController.php
-	"	2	0
-	^	33	0
-	.	1	0
-	+	6	7
-	+	6	7
-	+	7	12
-	+	6	0
-	+	6	7
-	+	6	7
-	+	33	0
-	+	6	0
-	+	1	0
-	+	1	0
-	m	35	49
-	n	35	50
+> ~/mnt/sandbox/inc/models/Models/Mapper/Db/Table/Crm/MailRevisions.php
+	"	29	0
+	^	29	1
+	.	29	1
+	+	5	45
+	+	9	46
+	+	30	0
+	+	24	36
+	+	27	0
+	+	25	36
+	+	26	9
+	+	27	35
+	+	26	36
+	+	14	0
+	+	13	9
+	+	30	0
+	+	29	1
 
-> ~/public_html/MailCommand.php
-	"	405	15
-	^	405	16
-	.	405	15
-	+	16	13
-	+	48	20
-	+	48	0
-	+	48	0
-	+	405	15
+> ~/mnt/sandbox/inc/models/Models/Mapper/Crm/Mail.php
+	"	1	0
 
-> ~/sukima-vimrc-297cd6d/NERD_tree_1
-	"	3	9
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
+> ~/mnt/sandbox/inc/models/Models/Service/Crm/Mail.php
+	"	1	0
 
-> ~/Documents/NERD_tree_1
-	"	2	0
-	.	2	0
+> ~/mnt/sandbox/inc/models/Models/Service/Crm/Mails.php
+	"	116	0
+
+> ~/mnt/sandbox/tests/libs/App/Helpers/Sql/Parts/WhereTest.php
+	"	24	56
+	^	24	9
+	.	24	54
 	+	2	0
-
-> ~/sukima-vimrc-297cd6d/NERD_tree_2
-	"	5	6
-	.	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-	+	1	0
-
-> ~/sukima-vimrc-297cd6d/NERD_tree_3
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/sukima-vimrc-297cd6d/dotty-repository.thor
-	"	1	0
-
-> ~/sukima-vimrc-297cd6d/vimrc
-	"	1	0
-
-> ~/public_html/fusion.dev.com/application/commands/SocialMatchCommand.php
-	"	1	3
-	.	105	0
-	+	47	0
-	+	105	0
-
-> ~/public_html/fusion.dev.com/application/commands/NotificationsCommand.php
-	"	22	71
-	.	1	0
-	+	1	0
-
-> ~/sukima-vimrc-297cd6d/[BufExplorer]
-	"	1	0
-
-> /usr/share/vim/vim73/doc/help.txt
-	"	1	0
-
-> ~/sukima-vimrc-297cd6d/__Tag_List__
-	"	2	0
-	.	1	0
+	+	22	5
+	+	23	0
+	+	2	0
+	+	2	0
+	+	3	14
+	+	4	14
+	+	3	22
+	+	4	13
 	+	3	0
+	+	4	0
+	+	52	0
+	+	75	0
+	+	99	0
+	+	25	0
+	+	24	54
+
+> ~/mnt/sandbox/tests/run.php
+	"	11	48
+	^	11	49
+	.	11	0
+	+	7	0
+	+	5	0
+	+	16	11
+	+	16	16
+	+	5	0
+	+	17	0
+	+	6	26
+	+	12	8
+	+	11	0
 	+	2	0
+	+	14	29
+	+	17	0
+	+	2	0
+	+	6	9
+	+	11	0
+	+	20	4
+	+	19	0
+	+	11	0
+	+	20	12
+	+	20	4
+	+	20	17
+	+	20	0
+	+	21	0
+	+	3	0
+	+	11	0
+
+> ~/mnt/sandbox/tests/libs/AllAppTests.php
+	"	21	36
+	^	21	9
+	.	21	22
 	+	1	0
+	+	6	0
+	+	7	16
+	+	15	0
+	+	15	0
+	+	15	0
+	+	3	0
+	+	15	0
+	+	17	0
+	+	15	0
+	+	15	0
+	+	11	0
+	+	15	58
+	+	4	0
+	+	15	0
+	+	15	0
+	+	15	0
+	+	4	0
+	+	15	0
+	+	15	0
+	+	15	50
+	+	15	50
+	+	16	0
+	+	16	0
+	+	15	0
+	+	5	47
+	+	15	30
+	+	5	9
+	+	15	23
+	+	12	8
+	+	16	0
+	+	12	64
+	+	14	39
+	+	5	25
+	+	19	4
+	+	7	17
+	+	26	0
+	+	3	16
+	+	3	3
+	+	3	18
+	+	3	0
+	+	3	17
+	+	3	25
+	+	3	0
+	+	4	0
+	+	21	8
+	+	22	0
+	+	23	0
+	+	21	22
 
-> /usr/share/vim/vim73/doc/usr_05.txt.gz
-	"	474	0
-	.	626	0
-	+	626	0
+> ~/mnt/sandbox/tests/libs/App/Helpers/Sql/AllAppHelpersSqlTests.php
+	"	20	42
+	^	20	43
+	.	20	22
+	+	4	9
+	+	6	27
+	+	18	4
+	+	20	8
+	+	21	0
+	+	22	0
+	+	20	22
 
-> ~/Documents/gitconfig.git/bashrc
-	"	2	0
-	^	2	0
-	.	2	0
-	+	12	55
-	+	2	0
+> /var/www/html/unit/app/config/bootstrap.php
+	"	12	24
+	^	12	38
+	.	12	0
+	+	94	19
+	+	94	37
+	+	12	0

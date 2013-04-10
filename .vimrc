@@ -1,7 +1,13 @@
-source ~/.vim/settings.vim
-"--------------------------+
+" --------------------------+
 "        General           |
 "--------------------------+
+
+let g:SESSION_DIR   = $HOME.'/.cache/vim/sessions'
+
+if finddir(g:SESSION_DIR) == ''
+    silent call mkdir(g:SESSION_DIR, "p")
+endif
+
 "pathogen
 let g:pathogen_disabled = []
 if !has('gui_running')
@@ -21,30 +27,6 @@ autocmd! bufwritepost .vimrc source ~/.vimrc
 " gundo 
 nnoremap <F6> :GundoToggle<CR>
 
-" folding
-set foldenable                  " enable folding
-set foldcolumn=2                " add a fold column
-set foldmethod=marker           " detect triple-{ style fold markers
-set foldlevelstart=99           " start out with everything folded
-set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
-                                " which commands trigger auto-unfold
-function! MyFoldText()
-    let line = getline(v:foldstart)
-
-    let nucolwidth = &fdc + &number * &numberwidth
-    let windowwidth = winwidth(0) - nucolwidth - 3
-    let foldedlinecount = v:foldend - v:foldstart
-
-    " expand tabs into spaces
-    let onetab = strpart('          ', 0, &tabstop)
-    let line = substitute(line, '\t', onetab, 'g')
-
-    let line = strpart(line, 0, windowwidth - 2 -len(foldedlinecount))
-    let fillcharcount = windowwidth - len(line) - len(foldedlinecount) - 4
-    return line . ' …' . repeat(" ",fillcharcount) . foldedlinecount . ' '
-endfunction
-set foldtext=MyFoldText()
-
 " file options
 set fileencodings=utf8
 set encoding=utf8 nobomb " utf-8 with out BOM
@@ -54,6 +36,31 @@ set ff=unix " default file format
 " not compatible with the old-fashion vi mode
 set nocompatible
 
+" Sessions
+fun! SessionRead(name)
+    let s:name = g:SESSION_DIR.'/'.a:name.'.session'
+    if getfsize(s:name) >= 0
+        echo "Reading " s:name
+        exe 'source '.s:name
+        exe 'silent! source '.getcwd().'/.vim/.vimrc'
+    else
+        echo 'Not find session: '.a:name
+    endif
+endfun
+
+fun! SessionInput(type)
+    let s:name = input(a:type.' session name? ')
+    if a:type == 'Save'
+        call SessionSave(s:name)
+    else
+        call nested SessionRead(s:name)
+    endif
+endfun
+
+fun! SessionSave(name)
+    exe "mks! " g:SESSION_DIR.'/'.a:name.'.session'
+    echo "Session" a:name "saved"
+endfun
 
 "--------------------------+
 "        Appearance        |
@@ -76,7 +83,7 @@ set showcmd
 set ruler
 
 " command bar height
-set ch=1
+set ch=2
 
 " highlight syntax
 syntax on
@@ -103,6 +110,34 @@ set hlsearch
 "--------------------------+
 "           Misc           |
 "--------------------------+
+" Fugitive
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>ga :Gwrite<CR>
+nnoremap <leader>gc :Gcommit %<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gl :Glog<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>gr :Gremove<CR>
+nnoremap <leader>go :Gread<CR>
+nnoremap <leader>gpl :Git pull origin master<CR>
+nnoremap <leader>gpp :Git push<CR>
+nnoremap <leader>gpm :Git push origin master<CR>
+
+" C-j in normal mode = <cr>
+nnoremap <NL> i<CR><ESC>
+
+" Esc
+imap jj <Esc>
+
+" fast use mapping keys
+set notimeout
+
+" Not jump on star, only highlight
+nnoremap * *N
+
+" Drop hightlight search result
+noremap <leader><space> :nohls<CR>
+
 " hide mouse pointer when printing
 set mousehide 
 
@@ -113,7 +148,6 @@ set clipboard=unnamed
 filetype on
 filetype plugin on
 filetype indent on
-au FileType php set omnifunc=phpcomplete#CompletePHP
 
 " no *~ backup and swap files
 set nobackup
@@ -161,7 +195,46 @@ set backspace=indent,eol,start whichwrap+=<,>,[,]
 set mouse=a
 set mousemodel=popup
 
+" long lines
+nmap j gj
+nmap < DOWN> gj
+nmap k gk
+nmap < UP> gk
 
+"highlights lines lenght > 80
+if exists('+colorcolumn')
+    highlight ColorColumn ctermbg=235 guibg=#2c2d27
+    highlight CursorLine ctermbg=235 guibg=#2c2d27
+    highlight CursorColumn ctermbg=235 guibg=#2c2d27
+    let &colorcolumn=join(range(81,999),",")
+else
+    autocmd BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
+end
+
+
+
+ if has("autocmd")
+
+        augroup vimrc
+        au!
+            " Autosave last session
+            if has('mksession') 
+                au VimLeavePre * :call SessionSave('last')
+            endif
+
+
+        augroup END
+
+    endif
+
+" }}}
+"
+"
+"
+"
+"
+"
+"
 "--------------------------+
 "         Mapping          |
 "--------------------------+
@@ -206,12 +279,6 @@ imap [ []<LEFT>
 " auto insert }
 imap {<CR> {<CR>}<Esc>
 
-" reselct paste text
-nnoremap <leader>v V`]
-
-" quick exit to normal mode
-inoremap jj <ESC>
-
 " Useful mappings for managing tabs
 map <leader>tn :tabnew<cr>
 map <leader>to :tabonly<cr>
@@ -225,31 +292,24 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " copy current doc - open new tab - paste doc
 map <leader>co ggVGy:tabnew<cr>:<cr>pgg
 
-" useful search
-nnoremap / /\v
-vnoremap / /\v
-
 " folding
 map <leader>zc :EnablePHPFol<cr>
 map <leader>zo :DisablePHPFold<cr>
 
-nnoremap <leader>a :Ack
+" input mode map 
+inoremap <F9>  <ESC>:Phpcs<CR> 
+inoremap <F7> <ESC>:cprev<CR> 
+inoremap <F8> <ESC>:cnext<CR> 
 
-" marks browser
-map <leader>m :MarksBrowser<cr>
+"normal mode map 
+noremap <F9>  <ESC>:Phpcs<CR> 
+noremap <F7> <Esc>:cprev<CR> 
+noremap <F8> <ESC>:cnext<CR>
 
-" Tagbar plugin
-nmap <F8> :TagbarToggle<cr>
-let g:tagbar_left = 1
-let g:tagbar_width = 30
-let g:tagbar_iconchars = ['▶', '◢']
-let g:tagbar_sort = 0
+" code sniffer
+let g:phpcs_std_list="Zend, PEAR"
 
-
-let g:ctrlp_extensions = ['tag','changes','mixed']
-set runtimepath^=~/.vim/bundle/kien-ctrlp.vim/plugin/ctrlp.vim
-let g:ctrlp_use_caching = 1
-let g:ctrlp_cache_dir = '~/.vim/.cache/ctrlp'
-
-
-
+" Session UI
+nnoremap <Leader>ss :call SessionInput('Save')<CR>
+nnoremap <Leader>sr :call SessionInput('Read')<CR>
+nnoremap <Leader>sl :call SessionRead('last')<CR>
